@@ -21,7 +21,7 @@ if "PINECONE_ENVIRONMENT" not in st.session_state:
 
 st.set_page_config(page_title="Welcome to MeD4LM", layout="wide")
 
-st.title("Welcome to MeD4LM")
+st.title("👨🏻‍⚕️ Welcome to MeD4LM 👩🏻‍⚕️")
 
 # with st.container():
 #     st.header("OpenAI Settings")
@@ -41,7 +41,7 @@ st.title("Welcome to MeD4LM")
 
 if chat:
     with st.container():
-        st.header("Chat with GPT")
+        st.header("🤖 Chat with GPT")
         prompt = st.text_input("Prompt", value="", max_chars=None, key=None, type='default')
         asked = st.button("Ask")
         if asked:
@@ -49,4 +49,4 @@ if chat:
             st.write(ai_message.content)
 else:
     with st.container():
-        st.warning("Please enter your OpenAI API key in the settings page to use the chatbot.")
+        st.warning("❗️ Please enter your OpenAI API key in the settings page to use the chatbot")
