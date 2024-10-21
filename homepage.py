@@ -1,5 +1,5 @@
 import streamlit as st
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 from langchain.schema import (
     AIMessage,
     HumanMessage,
@@ -19,7 +19,8 @@ if "PINECONE_API_KEY" not in st.session_state:
 if "PINECONE_ENVIRONMENT" not in st.session_state:
     st.session_state["PINECONE_ENVIRONMENT"] = ""
 
-st.set_page_config(page_title="Welcome to MeD4LM", layout="wide")
+st.markdown("# Home 🤞")
+st.sidebar.markdown("# Home 🤞")
 
 st.title("👨🏻‍⚕️ Welcome to MeD4LM 👩🏻‍⚕️")
 
